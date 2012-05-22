@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Cookie Auth Demo</title>
+		<style>
+			body {
+				margin-top: 0;
+			}
+			div#container {
+				width: 50%;
+				margin: 0 auto;
+				background: #EEE;
+			}
+			h1, p {
+				padding: 1em 1em;
+			}
+			div#ckau {
+				background: #FFFFAD;
+				text-align: center;
+				width: 50%;
+				max-width: 1000px;
+				margin: 0 auto;
+				font-size: 0.75em;
+				border-left: 1px solid #111;
+				border-right: 1px solid #111;
+				border-bottom: 1px solid #111;
+				font-family: Calibri, Arial, sans-serif;
+				cursor: default;
+				box-shadow: 0 10px 0 -5px #AAA;
+			}
+			div#ckau > p {
+				padding: 0;
+				margin: 0;
+				line-height: 1.5em;
+			}
+			div#ckau > a {
+				padding: 0.1em 0.5em;
+				line-height: 2em;
+				color: #444;
+				border: 1px solid #111;
+				background: #EEE;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="container">
+			<h1>Website body</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur elementum quam sed sapien adipiscing quis vehicula ante placerat. Nulla id magna nisl, ac luctus metus. Nunc sagittis, libero interdum volutpat porttitor, enim ligula fringilla tortor, vel scelerisque dolor orci ac erat. Aliquam et urna risus. Vivamus justo justo, sagittis ac egestas pellentesque, lobortis at dui. Phasellus faucibus commodo ante id eleifend. Sed ullamcorper suscipit malesuada. Phasellus feugiat diam eget ligula tempus suscipit eu at tortor. Fusce egestas aliquam quam nec bibendum. Ut lobortis, urna non lobortis pellentesque, ipsum nisl fermentum augue, eu iaculis felis sem eget erat. Suspendisse potenti. Fusce vel quam nunc. Fusce neque massa, venenatis non porttitor non, viverra eget lorem. Aliquam erat volutpat. Sed at lobortis nisi. Pellentesque sagittis eros malesuada nisi commodo eu tincidunt eros lobortis.</p>
+			<p>Nunc vulputate tortor nec nulla laoreet id pulvinar augue pellentesque. Duis sed massa sit amet massa faucibus bibendum ut non ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In blandit felis egestas orci malesuada ullamcorper. Aliquam sed elit quis turpis hendrerit pharetra in et tellus. Suspendisse vitae massa massa, quis iaculis enim. Ut nec sem orci. Donec tempus erat quis elit consectetur euismod pellentesque tortor lacinia. Ut vehicula semper rhoncus. Fusce laoreet, libero id porttitor fermentum, nulla nisi euismod dui, nec consequat nibh leo id augue. Pellentesque volutpat mi vel leo pellentesque pharetra. Cras ligula diam, malesuada at blandit sed, laoreet in eros. Curabitur ornare, turpis eget tempor accumsan, dui mauris suscipit sapien, quis mattis nunc lacus semper est.</p>
+			<p>Duis sed nisi arcu. Etiam rhoncus massa vitae mauris bibendum tincidunt. Duis id consectetur dui. Vestibulum odio magna, rhoncus at condimentum bibendum, faucibus vitae eros. Integer id arcu quis elit porta ullamcorper id a mauris. Suspendisse a turpis tincidunt diam iaculis euismod. Praesent nec metus purus. Donec pellentesque elementum nunc non porta. Maecenas in mi eu sem pretium rhoncus at nec dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras magna dolor, suscipit eget condimentum et, suscipit nec diam. Pellentesque eu libero elit. Sed ut lectus vitae nisl luctus volutpat et ut est. Donec molestie felis quis urna dignissim vitae vehicula turpis mattis. Vestibulum ut sapien dictum dolor ultricies rhoncus. Nulla et tellus eros.</p>
+			<p>In consectetur purus in sem suscipit fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae mauris justo. Pellentesque rutrum vehicula risus, in adipiscing metus dictum eu. Fusce tempor consequat felis, at eleifend nisl gravida eu. In ut odio non justo pellentesque fermentum et sit amet nisl. Nullam vel est sollicitudin dui vulputate cursus. Nullam sed diam ac ipsum sodales varius.</p>
+			<p>Fusce consectetur erat non turpis tincidunt interdum viverra nisl porttitor. Duis tristique velit et enim sollicitudin eu mattis diam ultrices. Morbi lacus augue, convallis sed accumsan sed, adipiscing quis velit. Proin mollis lacus non arcu luctus faucibus. Vestibulum ut turpis nisl, sed volutpat enim. In consequat semper leo, ut mollis nisi adipiscing eget. Curabitur rutrum consequat leo, nec posuere neque tristique eu. Quisque vitae libero sit amet lorem ullamcorper condimentum vitae quis justo. Pellentesque ultrices blandit lacus sed fringilla. Nunc nec eros nunc, ut ornare sem.</p>
+		</div>
+
+		<script src="cookieAuth.min.js"></script>
+		<script>
+			if (typeof isAllowed !== 'undefined' && isAllowed()) {
+				if (typeof console !== 'undefined') {
+					console.log('set some cookies!');
+				} else {
+					alert('set some cookies!');
+				}
+			}
+		</script>
+
+	</body>
+
+</html>
