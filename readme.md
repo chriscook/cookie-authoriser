@@ -17,11 +17,15 @@ These two scripts have been produced to give developers an easy way to make thei
 1. Add `cookieAuth-ec.min.js` to your project.
 2. Use the `isAllowed()` function to determine whether or not permission to set cookies has been granted, for example:
 
+```javascript
 	if (isAllowed()) {
 		// set cookies here
 	}
+```
 
 A demo is available in demo-ec.html.
+
+If you have some non-Javascript code setting cookies, you'll need to check whether a cookie called `ckau-ec` is set to `true` before setting cookies.
 
 #### Customisation
 
