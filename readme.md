@@ -1,7 +1,7 @@
 Cookie Authoriser
 =============
 
-Version 1.1
+Version 1.2
 -----------
 
 ### Introduction
@@ -49,7 +49,7 @@ For CSS purposes, the banner has an ID of `ckau-ic`, and it contains an `a` elem
 
 ### Incorporating with larger codebases
 
-This script was designed so that it could be dropped into any page and work with minimal effort and overhead, and no dependencies. For this reason it includes Dustin Diaz's [domready](https://github.com/ded/domready) script. You may want to extract the contents of this function within `cookieAuth.js`, and add it to the document ready function of your own code if your page already contains some JavaScript.
+This script was designed so that it could be dropped into any page and work with minimal effort and overhead, and no dependencies. For this reason it includes Dustin Diaz's [_domready_](https://github.com/ded/domready) script. Sometimes, this can cause problems with pages which already contain _jQuery_. In these cases, use the _jQuery_ versions (`cookieAuth-ec-jquery.js` and `cookieAuth-ic-jquery.js`), which do not use the _domready_ script and instead add events to the _jQuery_ event queue.
 
 ### Compatibility
 
