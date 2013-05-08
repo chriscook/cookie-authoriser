@@ -1,8 +1,6 @@
-Cookie Authoriser
-=============
+# Cookie Authoriser
 
-Version 1.2
------------
+## Version 1.3
 
 ### Introduction
 
@@ -14,7 +12,7 @@ These two scripts have been produced to give developers an easy way to make thei
 
 #### How to use it
 
-1. Add `cookieAuth-ec.min.js` to your project.
+1. Add `cookieAuth-ec.min.js` to your project just before your closing `body` tag.
 2. Use the `isAllowed()` function to determine whether or not permission to set cookies has been granted, for example:
 
 ```javascript
@@ -39,17 +37,13 @@ For CSS purposes, the banner has an ID of `ckau-ec`, and it contains two `p` ele
 
 #### How to use it
 
-Just add `cookieAuth-ic.min.js` to your project, and the banner will appear. A demo is available in demo-ic.html.
+Just add `cookieAuth-ic.min.js` to your project just before your closing `body` tag, and the banner will appear. A demo is available in demo-ic.html.
 
 #### Customisation
 
 To make deployment as easy as possible, the text for the message is embedded within the JavaScript file. You can edit this manually to add links to explanatory documents or your privacy policy.
 
 For CSS purposes, the banner has an ID of `ckau-ic`, and it contains an `a` element (a link to your policy) and a `span` element (the button to dismiss the bar). It has no default styling set.
-
-### Incorporating with larger codebases
-
-This script was designed so that it could be dropped into any page and work with minimal effort and overhead, and no dependencies. For this reason it includes Dustin Diaz's [_domready_](https://github.com/ded/domready) script. Sometimes, this can cause problems with pages which already contain _jQuery_. In these cases, use the _jQuery_ versions (`cookieAuth-ec-jquery.js` and `cookieAuth-ic-jquery.js`), which do not use the _domready_ script and instead add events to the _jQuery_ event queue.
 
 ### Compatibility
 
@@ -63,4 +57,3 @@ Tested on:
 ### Author and acknowledgements
 
 + Written by [Chris Cook](http://chris-cook.co.uk)
-+ Utilises [domready by Dustin Diaz](https://github.com/ded/domready)
